@@ -73,7 +73,7 @@ def main(sub,email,path):
     img_width = 640
     thread = myThread(path)
     thread.start()    
-    out = cv2.VideoWriter('fakemanout.avi', thread.fourcc, thread.fps, thread.size)  
+    #out = cv2.VideoWriter('fakemanout.avi', thread.fourcc, thread.fps, thread.size)  
     es = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 4))
     kernel = np.ones((5, 5), np.uint8)
     background = None
@@ -172,9 +172,9 @@ def main(sub,email,path):
                 up_left_x = pos[1]
                 up_left_y = pos[3]
                 down_right_y = pos[2]
-                if (down_right_x>(centroid[2]+centroid[4])/2.0>up_left_x and up_left_y<centroid[5]<down_right_y):
+                if dir=="up" and (down_right_x>(centroid[2]+centroid[4])/2.0>up_left_x and up_left_y<centroid[5]<down_right_y):
                     cv2.rectangle(frame, (centroid[2],centroid[3]), (centroid[4],centroid[5]), (0, 255, 0), 2)
-                elif (down_right_x>(centroid[2]+centroid[4])/2.0>up_left_x and up_left_y<centroid[3]<down_right_y):
+                elif dir=="down" and (down_right_x>(centroid[2]+centroid[4])/2.0>up_left_x and up_left_y<centroid[3]<down_right_y):
                     cv2.rectangle(frame, (centroid[2],centroid[3]), (centroid[4],centroid[5]), (0, 255, 0), 2)
         for pos in sub:
             down_right_x = pos[0]
@@ -184,7 +184,8 @@ def main(sub,email,path):
             cv2.rectangle(frame, (up_left_x, up_left_y), (down_right_x, down_right_y), (255, 255, 0), 2)
         diff = cv2.merge((diff, diff, diff))
         mix = np.hstack((frame, diff))  
-        out.write(mix)
+        #out.write(mix)
+        cv2.imwrite("c.png", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             thread_exit = True            
         yield (frame,count)

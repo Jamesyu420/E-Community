@@ -1366,14 +1366,12 @@ class Ui_MainWindow(object):
         self.of_upload.setText(_translate("MainWindow","选取背景"))
         self.throw_2_back.setText(_translate("MainWindow", " 返回"))
         self.otherfun_back.setText(_translate("MainWindow", " 返回"))
-        self.contact_text.setText(_translate("MainWindow", "   GitHub:\n"
-"   https://github.com/\n"
+        self.contact_text.setText(_translate("MainWindow", "    GitHub:\n"
+"    https://github.com/\n    Jamesyu420/\n    E-Community"
 "\n"
-"   微信:\n"
-"   185xxxx9806\n"
 "\n"
-"   Email:\n"
-"   E_community@126.com\n"
+"    Email:\n"
+"    E_community@126.com\n"
 ""))
         self.learn_more.setText(_translate("MainWindow", "更多"))
         self.label_4.setText(_translate("MainWindow", "欢迎进入智慧小区安全防护系统！"))
