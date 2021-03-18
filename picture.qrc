@@ -1,0 +1,41 @@
+<RCC>
+  <qresource prefix="images">
+    <file>image/3.PNG</file>
+    <file>image/a.jpg</file>
+    <file>image/b.jpg</file>
+    <file>image/beij.png</file>
+    <file>image/beij1.png</file>
+    <file>image/beij2.png</file>
+    <file>image/c.jpg</file>
+    <file>image/coffee.png</file>
+    <file>image/d.jpg</file>
+    <file>image/email.png</file>
+    <file>image/evening_list.png</file>
+    <file>image/evening_pack.png</file>
+    <file>image/j.PNG</file>
+    <file>image/lunch.png</file>
+    <file>image/morning_cl.png</file>
+    <file>image/morning_rc.png</file>
+    <file>image/report.png</file>
+    <file>image/throw_record.png</file>
+    <file>image/zhang.png</file>
+    <file>image/报告.png</file>
+    <file>image/捕获.PNG</file>
+    <file>image/定位.png</file>
+    <file>image/返回.png</file>
+    <file>image/分析.png</file>
+    <file>image/高.png</file>
+    <file>image/功能.png</file>
+    <file>image/共.png</file>
+    <file>image/监测.png</file>
+    <file>image/联系.png</file>
+    <file>image/联系我们.png</file>
+    <file>image/其他.png</file>
+    <file>image/提示.png</file>
+    <file>image/提醒.png</file>
+    <file>image/图片3.png</file>
+    <file>image/图片4.png</file>
+    <file>image/越.png</file>
+    <file>image/主页.png</file>
+  </qresource>
+</RCC>
